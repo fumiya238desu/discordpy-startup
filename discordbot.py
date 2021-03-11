@@ -5,6 +5,8 @@ import traceback
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
+client = discord.Client()
+
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -20,8 +22,10 @@ async def ping(ctx):
 @bot.command()
 async def しおみ(ctx):
     await ctx.send('しおみでーす')
-    
-    
+
+    @bot.command()
+async def にゃーん(ctx):
+await client.send(discode.File('/shiomi/shiomi.jpg'))    
 
 
 bot.run(token)
