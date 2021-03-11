@@ -24,7 +24,6 @@ async def しおみ(ctx):
     
 @bot.command()
 async def にゃーん(ctx):
-file = discord.File('/shiomi/shiomi.jpg')
-await ctx.send(file=”file”, content='相性表')
+await ctx.send(discord.File('./shiomi/shiomi.jpg'))
 
 bot.run(token)
