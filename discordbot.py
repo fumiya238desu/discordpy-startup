@@ -22,8 +22,6 @@ async def しおみ(ctx):
     await ctx.send('しおみでーす')
     
     
-@bot.command()
-async def にゃーん(ctx):
-await ctx.send(discord.File('./shiomi/shiomi.jpg'))
+
 
 bot.run(token)
