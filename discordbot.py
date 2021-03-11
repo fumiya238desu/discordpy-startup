@@ -20,5 +20,12 @@ async def ping(ctx):
 @bot.command()
 async def しおみ(ctx):
     await ctx.send('しおみでーす')
+    
+@bot.command()
+async def にゃーん(ctx):
+filepath = '/discordpy-startup/shiomi/shiomi'
+message = '相性表'
+await client.send_file(message.channel,filepath)    
+    
 
 bot.run(token)
