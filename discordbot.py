@@ -23,10 +23,8 @@ async def しおみ(ctx):
     
 @bot.command()
 async def にゃーん(ctx):
-filepath = './discordpy-startup/shiomi/shiomi'
-message = '相性表'
-await .send_file(message.channel,filepath)    
-
+file = discord.File(./discordpy-startup/shiomi/shiomi)
+await ctx.send(file=file, content="相性表")
     
 
 bot.run(token)
