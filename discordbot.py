@@ -23,7 +23,7 @@ async def ping(ctx):
 async def しおみ(ctx):
     await ctx.send('しおみでーす')
 
-    @bot.command()
+@bot.command()
 async def にゃーん(ctx):
 await client.send(discode.File('/shiomi/shiomi.jpg'))    
 
