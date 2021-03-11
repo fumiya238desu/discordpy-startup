@@ -27,5 +27,5 @@ async def しおみ(ctx):
 async def にゃーん(ctx):
 await client.send(discode.File('/shiomi/shiomi.jpg'))    
 
-
+ 
 bot.run(token)
