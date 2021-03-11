@@ -21,7 +21,7 @@ async def ping(ctx):
 
 @bot.command()
 async def にゃーん(ctx):
-    await msg.channel.send(discode.File("C:\Users\test\Pictures\shiomi"))    
+    await msg.channel.send(File=discode.File("C:\Users\test\Pictures\shiomi"))    
 
  
 bot.run(token)
